@@ -1,5 +1,5 @@
 {
 	"pipeline_no":"{{Pipeline_no.inputText}}",
-	"cluster_name":"{{Cluster.inputText}}",
+	"cluster_name":"{{Cluster.selectedOptionLabel}}",
 	"account_name":"{{Account.inputText}}"
 }

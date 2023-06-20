@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "https://cell-beatles-luther-acceptance.trycloudflare.com"
+        "url": "http://host.docker.internal:8000"
       },
       "invalids": [],
       "messages": [],
@@ -30,7 +30,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"pipeline_no\":\"{{Pipeline_no.inputText}}\",\n\t\"cluster_name\":\"{{Cluster.inputText}}\",\n\t\"account_name\":\"{{Account.inputText}}\"\n}\n",
+      "body": "{\n\t\"pipeline_no\":\"{{Pipeline_no.inputText}}\",\n\t\"cluster_name\":\"{{Cluster.selectedOptionLabel}}\",\n\t\"account_name\":\"{{Account.inputText}}\"\n}\n",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -54,7 +54,7 @@
     "messages": [],
     "jsonPathKeys": [
       "Account.inputText",
-      "Cluster.inputText",
+      "Cluster.selectedOptionLabel",
       "Pipeline_no.inputText"
     ],
     "userSetOnLoad": true,

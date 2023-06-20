@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "https://cell-beatles-luther-acceptance.trycloudflare.com"
+        "url": "http://host.docker.internal:8000"
       },
       "invalids": [],
       "messages": [],
