@@ -1,0 +1,5 @@
+{
+	"pipeline_no":"{{Pipeline_no.inputText}}",
+	"cluster_name":"{{Cluster.inputText}}",
+	"account_name":"{{Account.inputText}}"
+}
