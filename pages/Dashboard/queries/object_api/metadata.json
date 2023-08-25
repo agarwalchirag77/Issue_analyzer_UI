@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Source",
+    "name": "object_api",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
@@ -18,7 +18,7 @@
     },
     "pageId": "Dashboard",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "path": "/tables",
       "headers": [],
@@ -30,7 +30,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"pipeline_no\":\"{{Pipeline_no.inputText}}\",\n\t\"cluster_name\":\"{{Cluster.selectedOptionLabel}}\",\n\t\"account_name\":\"{{Account.inputText}}\"\n}\n",
+      "body": "{\n\t\"pipeline_no\":\"{{Pipeline_no.inputText}}\",\n\t\"cluster_name\":\"{{Cluster.selectedOptionValue}}\",\n\t\"team_id\":\"{{Account.inputText}}\"\n}\n",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -54,16 +54,16 @@
     "messages": [],
     "jsonPathKeys": [
       "Account.inputText",
-      "Cluster.selectedOptionLabel",
+      "Cluster.selectedOptionValue",
       "Pipeline_no.inputText"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-06-06T10:55:42Z"
+    "createdAt": "2023-08-11T07:52:24Z"
   },
-  "id": "Dashboard_Source",
+  "id": "Dashboard_object_api",
   "deleted": false,
   "gitSyncId": "647f106eae88102ee9fcd0d4_647f10ae0267f03021621fd8"
 }

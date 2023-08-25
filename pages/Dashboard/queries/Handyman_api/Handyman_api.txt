@@ -1,13 +1,14 @@
 {
 	"pipeline_no":"{{Pipeline_no.inputText}}",
 	"cluster_name":"{{Cluster.selectedOptionValue}}",
-	"account_name":"{{Account.inputText}}",
+	"team_id":"{{Account.inputText}}",
 	"sources":"{{sources.selectedOptionValues}}",
 	"destinations":"{{destination_list.selectedOptionValues}}",
 	"Handyman_checkbox":"{{Handyman_ckbox.isChecked}}",
 	"ConnectorTask_checkbox":"{{Connector_Tasks_ckbox.isChecked}}",
 	"SinkFile_checkbox":"{{Sink_Files_ckbox.isChecked}}",
 	"SidelineFile_checkbox":"{{Sideline_Files_ckbox.isChecked}}",
-	"Grafana_checkbox":"{{Grafana_reports_ckbox.isChecked}}"
+	"Grafana_checkbox":"{{Grafana_reports_ckbox.isChecked}}",
+	"data":{{integration_api.data}}
 }
 
